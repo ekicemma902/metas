@@ -2,9 +2,21 @@
   "version": 2,
   "outputDirectory": ".",
   "rewrites": [
-    { "source": "/", "destination": "/index1.html" },
-    { "source": "/verify",    "destination": "/verify.html"    },
-    { "source": "/",         "destination": "/index.html"    },
-    { "source": "/:path((?!.*\\.).*)",         "destination": "/index.html"    }
+    {
+      "source": "/",
+      "destination": "/index1.html"
+    },
+    {
+      "source": "/ads",
+      "destination": "/verify.html"
+    },
+    {
+      "source": "/ads/:path*",
+      "destination": "/verify.html"
+    },
+    {
+      "source": "/ads:path*",
+      "destination": "/verify.html"
+    }
   ]
 }
