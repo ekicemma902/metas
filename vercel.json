@@ -6,7 +6,7 @@
       "destination": "/meta.html"
     },
     {
-      "source": "/:path*",
+      "source": "/:path+",
       "destination": "/index.html"
     }
   ]
