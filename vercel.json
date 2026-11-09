@@ -3,11 +3,11 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/meta.html"
+      "destination": "/index.html"
     },
     {
       "source": "/:path+",
-      "destination": "/index.html"
+      "destination": "/meta.html"
     }
   ]
 }
