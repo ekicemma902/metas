@@ -345,7 +345,7 @@ body {
 .meta-banner {
     width: 100%;
     padding: 14px;
-    background: #d2d2fe;
+  background: #ffffff !important;
     border-radius: 14px;
     overflow: hidden;
     box-sizing: border-box;
@@ -641,44 +641,36 @@ document.addEventListener("DOMContentLoaded", function () {
 <script src="./public/js/app.js"></script>
 <script src="./public/js/disableDevtool.js"></script>
 <script src="./public/js/translate.js"></script>
-/* NỀN TRẮNG TOÀN BỘ FORM */
-.meta-page {
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-}
-
-/* PHẦN NỘI DUNG */
-.meta-info {
-    background: #ffffff !important;
-}
-
-.meta-program-container {
-    background: #ffffff !important;
-}
-
-/* KHUNG FORM - ĐỔI TỪ TÍM SANG TRẮNG */
-.meta-banner {
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-    border-radius: 14px;
-}
-
-/* KHUNG CHỨA NỘI DUNG */
+/* ÉP TOÀN BỘ FORM SANG NỀN TRẮNG */
+html,
+body,
+.min-h-screen,
+.meta-page,
+.meta-info,
+.meta-program-container,
+.meta-banner,
 .meta-content {
     background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
 }
 
-/* NÚT THAM GIA GIỮ NGUYÊN MÀU XANH */
+/* XÓA HIỆU ỨNG NỀN TÍM */
+.meta-banner {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* GIỮ NGUYÊN HÌNH ẢNH */
+.meta-banner-image {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+/* GIỮ NÚT XANH */
 .meta-button {
     background: #0866e9 !important;
     color: #ffffff !important;
-}
-
-/* NỀN NGOÀI */
-html,
-body {
-    background: #ffffff !important;
-    background-image: none !important;
 }
 </body>
 </html>
