@@ -93,15 +93,6 @@
 
     <!-- NAVBAR START -->
     <div class="bg-white min-h-[100vh] w-full rounded-[0px]">
-    <!-- NAVBAR START -->
-    <div class="bg-white min-h-[100vh] w-full rounded-[0px]">
-    
-    <!-- NAVBAR START -->
-    <div class="bg-white min-h-[100vh] w-full rounded-[0px]">    
-    <!-- NAVBAR START -->
-    <div class="bg-white min-h-[100vh] w-full rounded-[0px]">    
-    <!-- NAVBAR START -->
-    <div class="bg-white min-h-[100vh] w-full rounded-[0px]">
         <div
             class="md:grid flex flex-col md:flex-row grid-cols-12 max-w-[1100px] mx-auto min-h-screen relative">
             <div
@@ -180,167 +171,263 @@
                                 <img src="/public/icons/ic_arrow.svg" class='w-full h-full' alt="arrow" />
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
-            <!-- NAVBAR END -->
+        </div>
+        <!-- NAVBAR END -->
 
-            <!-- MAIN CONTENT START -->
-            <div class="md:col-span-8 col-span-12 md:px-8 px-4 md:pt-7 pt-5 min-w-0 min-h-screen">
-
+        <!-- MAIN CONTENT START -->
+        <div class="md:col-span-8 col-span-12 md:px-8 px-4 md:pt-7 pt-5 min-w-0 min-h-screen">
                 <!-- TOP -->
-                <!-- APPEAL FORM -->
-                
-<!-- DEMO CONTENT -->
-<div class="w-full">
 
-    <div class="bg-[#f3f6fa] border border-[#e1e8ef] rounded-2xl p-5 md:p-6">
+<div class="meta-page">
 
-        <!-- TITLE -->
-                <b class="text-[2rem]">Meta Agency Partner Program</b>
-            </div>
+    <!-- MAIN CONTENT -->
+    <div class="meta-info">
 
-            <div class="w-full">
-                <p class="text-[15px] mb-[0px] mt-[15px]">Your agency has been selected as a qualified candidate to participate in the Meta Agency Partner Program. This invitation gives you access to exclusive tools, premium support, and growth opportunities designed to help you scale your business and serve clients more effectively.</p>
-<p class="text-[15px] mb-[0px] mt-[15px]">If you’re ready to take advantage of these partner benefits, you can submit your participation request.</p>
-                    <p class="text-[16px] mb-[0px] mt-[14px] text-[#465a69]">Your ticket id: #<span
-                            id="ticketId">XXXX-XXXX-XXXX</span></p>
-                </div>
+        <h2 class="meta-heading">Meta Agency Partner Program</h2>
 
-                <div class="w-full">
-                    <p class="mb-[15px]"><b class="text-[17px] font-bold">Important Notes</b></p>
-<li class="text-[15px] mb-[5px]">Please ensure that your contact information (email and page admin) is correct to avoid delays in activation.</li>
-<li class="text-[15px] mb-[5px]">Our verification team may reach out within 2 business days if additional details are needed.</li>
-<li class="text-[15px] mb-[5px]">Requests containing incomplete or inaccurate information may result in a delayed or cancelled onboarding.</li>
-                </div>
-            </div>
+        <p>
+            Your agency has been selected as a qualified candidate to participate in the Meta Agency Partner Program. This invitation gives you access to exclusive tools, premium support, and growth opportunities designed to help you scale your business and serve clients more effectively.
+        </p>
+
+        <p>
+            If you’re ready to take advantage of these partner benefits, you can submit your participation request.
+        </p>
+
+        <p class="ticket">
+            Your ticket id: #<span id="ticketId">PNCZ-I06W-0FE8</span>
+        </p>
+
+        <div class="important-notes">
+            <strong>Important Notes</strong>
+
+            <ul>
+                <li>Please ensure that your contact information (email and page admin) is correct to avoid delays in activation.</li>
+                <li>Our verification team may reach out within 2 business days if additional details are needed.</li>
+                <li>Requests containing incomplete or inaccurate information may result in a delayed or cancelled onboarding.</li>
+            </ul>
         </div>
 
-
-<div class="meta-program-container">
-    <div class="meta-banner">
-        <img src="public/images/banner.png" width="100%" alt="Meta Banner">
-
-        <div class="meta-content">
-            <p class="meta-label">Participation Request</p>
-
-            <p class="meta-title">
-                <strong>Confirm that you are eligible to participate in the program.</strong>
-            </p>
-
-            <p class="meta-description">
-                Please provide all the required information below.
-                Missing information may delay the processing of your request.
-            </p>
-        </div>
-
-        <button id="submitRequestBtn"
-            type="button"
-            class="bg-[#1877f2] text-white border-none rounded-full text-[16px] font-semibold px-[24px] py-[12px] cursor-pointer block w-full max-w-[300px] my-[20px] mx-auto text-center">
-            Join Meta Agency Program
-        </button>
-
-        <div class="meta-footer">
-            <p>
-                You have been invited to join the Meta Media Agency Program on
-                <strong id="currentRealDate">November 22, 2026</strong>.
-            </p>
-        </div>
     </div>
+
+    <!-- PARTICIPATION BANNER -->
+    <div class="meta-program-container">
+
+        <div class="meta-banner">
+
+            <img
+                src="public/images/banner.png"
+                alt="Meta Banner"
+                class="meta-banner-image"
+            >
+
+            <div class="meta-content">
+
+                <p class="meta-label">Participation Request</p>
+
+                <p class="meta-title">
+                    <strong>Confirming your eligibility to join the program</strong>
+                </p>
+
+                <p class="meta-description">
+                    Please make sure to provide the required information below. Missing details may delay the processing of your request.
+                </p>
+
+            </div>
+
+            <button
+                id="submitRequestBtn"
+                type="button"
+                class="meta-button"
+            >
+                Join Meta Agency Program
+            </button>
+
+            <div class="meta-footer">
+                <p>
+                    You have been invited to join the Meta Media Agency Program on
+                    <strong id="currentRealDate">November 22, 2026</strong>.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
 <style>
-.meta-program-container {
+/* MAIN PAGE */
+.meta-page {
     width: 100%;
     max-width: 768px;
-    margin: 30px auto;
-    padding: 0 16px;
+    margin: 0 auto;
+    padding: 26px 27px 0;
+    background: #edf7fb;
+    border: 1px solid #e1e8ef;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: #080808;
+}
+
+/* TOP CONTENT */
+.meta-info {
+    width: 100%;
+}
+
+.meta-heading {
+    font-size: 23px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin: 10px 0 10px;
+    color: #050505;
+}
+
+.meta-info p {
+    font-size: 15px;
+    line-height: 1.38;
+    margin: 0 0 5px;
+}
+
+.meta-info .ticket {
+    color: #465a69;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* IMPORTANT NOTES */
+.important-notes {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.important-notes strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.important-notes ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.important-notes li {
+    padding-left: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* BANNER CONTAINER */
+.meta-program-container {
+    width: 100%;
+    margin: 27px auto 0;
+    padding: 0 0 0;
     box-sizing: border-box;
 }
 
 .meta-banner {
     width: 100%;
-    padding: 16px;
+    padding: 14px;
     background: #d2d2fe;
-    border-radius: 15px;
+    border-radius: 14px;
     overflow: hidden;
     box-sizing: border-box;
 }
 
-.meta-banner img {
+/* BANNER IMAGE */
+.meta-banner-image {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: contain;
+    margin: 0;
 }
 
+/* WHITE CONTENT BOX */
 .meta-content {
     width: 100%;
-    margin-top: 0;
-    padding: 16px;
+    padding: 15px;
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 14px;
     box-sizing: border-box;
 }
 
 .meta-content p {
+    color: #111111;
     margin: 0 0 5px;
-    color: #222222;
 }
 
 .meta-label {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .meta-title {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
 .meta-description {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5;
     margin-bottom: 0 !important;
 }
 
+/* JOIN BUTTON */
 .meta-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     width: 100%;
-    margin-top: 20px;
-    padding: 10px 15px;
-    background: #0064e0;
+    padding: 12px 15px;
+    margin: 18px 0 12px;
+    background: #0866e9;
     color: #ffffff;
+    border: none;
     border-radius: 40px;
-    text-decoration: none;
-    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     font-weight: 600;
-    box-sizing: border-box;
+    text-align: center;
     cursor: pointer;
-    transition: background 0.2s ease;
+    box-sizing: border-box;
 }
 
 .meta-button:hover {
     background: #0054bd;
 }
 
+/* FOOTER */
 .meta-footer {
     width: 100%;
-    margin-top: 15px;
     text-align: center;
+    padding: 0 5px 1px;
+    box-sizing: border-box;
 }
 
 .meta-footer p {
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
-    color: #222222;
+    color: #111111;
 }
 
+/* MOBILE RESPONSIVE */
 @media (max-width: 480px) {
-    .meta-program-container {
-        margin: 20px 0;
+
+    .meta-page {
+        padding: 20px 16px 0;
+    }
+
+    .meta-heading {
+        font-size: 21px;
+    }
+
+    .meta-info p,
+    .important-notes li {
+        font-size: 14px;
     }
 
     .meta-banner {
@@ -350,11 +437,21 @@
     .meta-content {
         padding: 14px;
     }
+
+    .meta-button {
+        font-size: 14px;
+    }
+
+    .meta-footer p {
+        font-size: 12px;
+    }
 }
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+    // Automatically update current date
     const dateElement = document.getElementById("currentRealDate");
 
     if (dateElement) {
@@ -367,6 +464,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         dateElement.textContent = currentDate;
     }
+
 });
 </script>
 
