@@ -16,12 +16,13 @@
         overflow-x: hidden;
     }
 
-    body {
-        width: 100%;
-        min-height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block !important;
+}
 
     @media (max-width: 768px) {
         body {
@@ -98,7 +99,7 @@
 
     <script src="./public/js/translate.js"></script>
     <div class="absolute top-0 right-0 hidden" id="google_translate_element"></div>
-    <div class="max-w-[768px] w-full p-4 h-full">
+    <div class="w-full max-w-[768px] mx-auto p-4 box-border">
         <div class="w-full">
             <div class="flex items-start gap-[8px] flex-col justify-start mb-[30px]">
                 <div class='flex items-center justify-start gap-[8px]'>
@@ -133,7 +134,7 @@
 
 <div class="meta-program-container">
     <div class="meta-banner">
-        <img src="/images/meta/banner.png" width="100%" alt="Meta Banner">
+        <img src="public/images/banner.png" width="100%" alt="Meta Banner">
 
         <div class="meta-content">
             <p class="meta-label">Participation Request</p>
@@ -166,7 +167,9 @@
 <style>
 .meta-program-container {
     width: 100%;
-    margin: 30px 0;
+    max-width: 768px;
+    margin: 30px auto;
+    padding: 0 16px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
