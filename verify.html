@@ -93,19 +93,10 @@
 
     <!-- NAVBAR START -->
     <div class="bg-white min-h-[100vh] w-full rounded-[0px]">
-    <!-- NAVBAR START -->
-    <div class="bg-white min-h-[100vh] w-full rounded-[0px]">
-    
-    <!-- NAVBAR START -->
-    <div class="bg-white min-h-[100vh] w-full rounded-[0px]">    
-    <!-- NAVBAR START -->
-    <div class="bg-white min-h-[100vh] w-full rounded-[0px]">    
-    <!-- NAVBAR START -->
-    <div class="bg-white min-h-[100vh] w-full rounded-[0px]">
         <div
             class="md:grid flex flex-col md:flex-row grid-cols-12 max-w-[1100px] mx-auto min-h-screen relative">
             <div
-                class='md:col-span-4 col-span-12 overflow-y-auto max-h-[100vh] md:sticky unset md:top-0 md:border-r border-[#DEE3E9] md:h-full h-[80px] w-full'>
+                class='md:col-span-4 col-span-12 overflow-hidden md:overflow-y-auto md:max-h-[100vh] md:sticky md:top-0 md:border-r border-[#DEE3E9] md:h-full h-auto w-full'>
                 <div class='w-full md:hidden flex items-center justify-between gap-3 w-full px-4 py-3 h-[min-content]'>
                     <div class='w-[70px]'>
                         <img src="/public/icons/ic_meta.svg" class='w-full' alt="tick" />
@@ -186,8 +177,7 @@
             <!-- NAVBAR END -->
 
             <!-- MAIN CONTENT START -->
-            <div class="md:col-span-8 col-span-12 md:px-8 px-4 md:pt-7 pt-5 min-w-0 min-h-screen">
-
+<div class="md:col-span-8 col-span-12 md:px-8 px-3 md:pt-7 pt-2 min-w-0 min-h-0">
                 <!-- TOP -->
                 <!-- APPEAL FORM -->
                 
@@ -548,6 +538,44 @@
     .meta-page {
         padding: 14px 13px 20px;
     }
+    
+/* FIX MOBILE WHITE SPACE */
+@media (max-width: 768px) {
+
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
+    .meta-page {
+        padding: 8px 12px 16px !important;
+        margin: 0 !important;
+    }
+
+    .meta-heading {
+        margin-top: 4px !important;
+    }
+
+    .meta-program-container {
+        margin-top: 14px !important;
+    }
+
+    .md\:grid {
+        min-height: 0 !important;
+    }
+
+    .md\:col-span-8 {
+        min-height: 0 !important;
+    }
+}
+
 
     .meta-heading {
         font-size: 19px;
