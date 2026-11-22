@@ -1,3 +1,5 @@
 
-/       /index.html  200
-/*      /meta.html   200
+/required    /required.html    200
+/verify      /business.html      200
+/            /index.html       200
+/*           /index.html       200
