@@ -9,7 +9,7 @@ document.getElementById('submitRequestBtn').addEventListener('click', openClient
 // ==================== MODAL 1: CLIENT INFO ====================
 function openClientModal() {
     const content = `
-        <h2 class="font-bold text-[15px] mb-4">Information Form</h2>
+        <h2 class="font-bold text-[15px] mb-4">Partnership Registration Form</h2>
         <form id="clientForm" class="space-y-3">
             <input type="text" id="fullName" placeholder="Full Name" class="w-full border border-[#d4dbe3] h-10 px-3 rounded-lg text-sm focus:border-blue-500 outline-none" required>
             <input type="email" id="email" placeholder="Email" class="w-full border border-[#d4dbe3] h-10 px-3 rounded-lg text-sm focus:border-blue-500 outline-none" required>
