@@ -16,26 +16,6 @@
         display: none !important;
     }
 </style>
-    <!-- HÌNH NỀN WEBSITE -->
-    <style>
-        html,
-body {
-    min-height: 100%;
-}
-
-body {
-    margin: 0;
-    background: linear-gradient(
-        115deg,
-        #f8eff7 0%,
-        #edf2fc 45%,
-        #e9faf2 100%
-    ) !important;
-    background-attachment: fixed !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-    </style>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -596,42 +576,40 @@ document.addEventListener("DOMContentLoaded", function () {
 <script src="./public/js/translate.js"></script>
 
 <style>
-/* BACKGROUND TOÀN WEBSITE */
-html {
-    min-height: 100%;
-    background: #edf2fc !important;
-}
 
+/* RESET BACKGROUND */
+html,
 body {
-    min-height: 100vh !important;
+    width: 100%;
+    min-height: 100%;
     margin: 0 !important;
-    background: transparent !important;
-    position: relative;
+    padding: 0;
 }
 
-/* LỚP GRADIENT PHỦ TOÀN MÀN HÌNH */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-
-    background: linear-gradient(
+/* TOÀN BỘ NỀN WEBSITE */
+html,
+body,
+body.bg-transparent {
+    background-color: #edf2fc !important;
+    background-image: linear-gradient(
         110deg,
         #f8eff7 0%,
-        #eff1fc 35%,
-        #eaf3fc 65%,
+        #f0effb 25%,
+        #edf2fc 48%,
+        #eaf4fa 72%,
         #e8faf2 100%
-    );
+    ) !important;
+
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: 100% 100% !important;
 }
 
-/* ĐẢM BẢO KHUNG NGOÀI TRONG SUỐT */
+/* KHUNG BAO NGOÀI */
 .page-background {
-    background: transparent !important;
+    width: 100%;
     min-height: 100vh;
+    background: transparent !important;
 }
 
 /* KHUNG NỘI DUNG */
@@ -639,7 +617,7 @@ body::before {
     background: transparent !important;
     border: none !important;
 }
-</style>
-            
+
+</style>   
 </body>
 </html>
